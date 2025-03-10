@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital@0;1&display=swap');
+
+/* Background color for the page */
+body {
+    background-color: #F9C0AB; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center heading */
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight:bolder;
+}
+
+header h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.1em;
+}
+
+/* Style the form container */
+.box {
+    background-color: #FBB4A5;
+    width: 50%; /* Adjust width */
+    margin: 0 auto; /* Center it */
+    padding: 25px;
+    border-radius: 15px;
+    border: 4px solid #FFE6A9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style each form section */
+.container {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+/* Style form labels */
+.labels {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+}
+
+/* Style input fields, textarea, and select box */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #FFE6A9;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Properly align checkboxes and radio buttons */
+input[type="checkbox"], input[type="radio"] {
+    width: auto;  /* Prevents full-width stretching */
+    margin-right: 10px;  /* Adds spacing between input and label */
+    vertical-align: middle;  /* Aligns the checkbox with the label text */
+}
+
+label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Adjust spacing for checkbox and radio button containers */
+.checkbox-container, .radiobox-container {
+    margin-bottom: 5px;
+}
+
+/* Style the submit and reset buttons */
+button {
+    width: 100%;
+    background-color: #FF8383;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #F9C0AB;
+    color: #000;
+}
+textarea{
+    margin-top:0.7rem;
+    margin-bottom:0.3rem;
+}

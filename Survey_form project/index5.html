@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Survey Form</title>
+    <link rel="stylesheet" href="styles(5).css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Library Survey</h1>
+        <p id="description">Help us improve your local library!</p>
+    </header>
+
+    <main>
+        <form action="https://httpbin.org/get" method="get" id="survey-form">
+            <div class="box">
+                
+                <div class="container">
+                    <label for="name" id="name-label" class="labels">Name:</label>
+                    <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="container">
+                    <label for="email" id="email-label" class="labels">Email:</label>
+                    <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="container">
+                    <label for="number" id="number-label" class="labels">Age:</label>
+                    <input type="number" id="number" name="Age" placeholder="Enter your age" min="10" max="100">
+                </div>
+
+                <div class="container">
+                    <label for="dropdown" class="labels">How often do you visit the library?</label>
+                    <select name="Visit Count" id="dropdown">
+                        <option value="" disabled selected>Select</option>
+                        <option value="Daily">Daily</option>
+                        <option value="A few times a week">A few times a week</option>
+                        <option value="Once a week">Once a week</option>
+                        <option value="A few times a month">A few times a month</option>
+                        <option value="Rarely">Rarely</option>
+                        <option value="Never">Never</option>
+                    </select>
+                </div>
+
+                <div class="container">
+                    <label class="labels">What is your preferred reading material?</label>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="material1" name="material" value="Book">
+                        <label for="material1">Book</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="material2" name="material" value="Magazines">
+                        <label for="material2">Magazines</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="material3" name="material" value="Newspaper">
+                        <label for="material3">Newspaper</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="material4" name="material" value="Research paper">
+                        <label for="material4">Research paper</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="material5" name="material" value="Ebooks">
+                        <label for="material5">Ebooks</label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <label class="labels">How satisfied are you with the library?</label>
+                    <div class="radio-container">
+                        <input type="radio" id="satisfaction1" name="satisfaction" value="Very Satisfied">
+                        <label for="satisfaction1">Very Satisfied</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" id="satisfaction2" name="satisfaction" value="Satisfied">
+                        <label for="satisfaction2">Satisfied</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" id="satisfaction3" name="satisfaction" value="Neutral">
+                        <label for="satisfaction3">Neutral</label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <label for="improvements" class="labels">What improvements would you like to see?</label>
+                    <textarea id="improvements" name="improvements" placeholder="Your suggestions" rows="4"></textarea>
+                </div>
+
+                <div class="container">
+                    <label class="labels">Would you recommend this library to others?</label>
+                    <div class="radio-container">
+                        <input type="radio" id="recommend1" name="recommendation" value="yes">
+                        <label for="recommend1">Yes</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" id="recommend2" name="recommendation" value="no">
+                        <label for="recommend2">No</label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <label for="comments" class="labels">Additional comments:</label>
+                    <textarea name="comments" id="comments" rows="4" placeholder="Your thoughts"></textarea>
+                </div>
+
+                <div class="container">
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
+
+            </div>
+        </form>
+    </main>
+</body>
+</html>
