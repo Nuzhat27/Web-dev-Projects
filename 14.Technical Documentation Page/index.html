@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Elements">Elements</a>
+    <a class="nav-link" href="#Attributes">Attributes</a>
+    <a class="nav-link" href="#Headings">Headings</a>
+    <a class="nav-link" href="#Paragraphs">Paragraphs</a>
+    <a class="nav-link" href="#Text_Formatting">Text Formatting</a>
+    <a class="nav-link" href="#Links">Links</a>
+    <a class="nav-link" href="#Comments">Comments</a>
+    <a class="nav-link" href="#Images">Images</a>
+    <a class="nav-link" href="#Lists">Lists</a>
+    <a class="nav-link" href="#Tables">Tables</a>
+    <a class="nav-link" href="#Forms">Forms</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>HTML (HyperText Markup Language) is the backbone of web development. It is used to create the structure of web pages. HTML works alongside CSS for styling and JavaScript for dynamic behavior.</p>
+            <p>HTML documents consist of elements, which are enclosed in angle brackets. These elements define different parts of a webpage, such as headings, paragraphs, lists, links, images, and more.</p>
+            <p>HTML files use the <code>.html</code> extension and are interpreted by web browsers to render web pages.</p>
+            <p>Basic HTML structure:</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;My First Page&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;p&gt;Hello, World!&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            <p>HTML is not a programming language but a markup language used to structure content. It provides a way to create a web page's skeleton, which can later be styled and made interactive.</p>
+            <p>HTML has evolved significantly, with HTML5 being the latest version, offering new elements like <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;nav&gt;</code>, improving semantic meaning and accessibility.</p>
+            <p>Developers use HTML in combination with CSS and JavaScript to create responsive, interactive websites.</p>
+            <p>Browsers like Chrome, Firefox, and Edge interpret HTML to display web content.</p>
+            <p>Understanding HTML is essential for web development, forming the base for building modern websites.</p>
+        </section>
+
+        <section class="main-section" id="Elements">
+            <header>Elements</header>
+            <p>HTML elements are the fundamental building blocks of web pages. Each element consists of a start tag, content, and an end tag.</p>
+            <p>Example of a paragraph element:</p>
+            <pre>&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre>
+            <p>Some elements, like the <code>&lt;br&gt;</code> tag, are self-closing and do not require an end tag.</p>
+            <p>Common elements:</p>
+            <ul>
+                <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> - Headings</li>
+                <li><code>&lt;p&gt;</code> - Paragraph</li>
+                <li><code>&lt;a&gt;</code> - Anchor (links)</li>
+                <li><code>&lt;img&gt;</code> - Image</li>
+                <li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> - Lists</li>
+            </ul>
+            <p>Each element serves a specific purpose in structuring a webpage.</p>
+            <p>For example, the <code>&lt;div&gt;</code> element acts as a container to group other elements together, which helps in styling and layout design.</p>
+            <p>HTML5 introduced new semantic elements such as <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;article&gt;</code>, making it easier to structure pages meaningfully.</p>
+        </section>
+
+        <section class="main-section" id="Attributes">
+            <header>Attributes</header>
+            <p>Attributes provide additional information about an HTML element. They are always included in the opening tag.</p>
+            <p>Example:</p>
+            <pre>
+                &lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+            </pre>
+            <p>Common attributes:</p>
+            <ul>
+                <li><code>href</code> - Specifies the URL of a link.</li>
+                <li><code>src</code> - Defines the source file of an image.</li>
+                <li><code>alt</code> - Provides alternative text for images.</li>
+                <li><code>id</code> - Assigns a unique identifier to an element.</li>
+                <li><code>class</code> - Allows CSS styling of multiple elements.</li>
+            </ul>
+            <p>Attributes improve accessibility and interactivity of webpages.</p>
+            <p>For example, the <code>alt</code> attribute in an image provides a textual description, useful for screen readers and cases where the image fails to load.</p>
+            <p>The <code>title</code> attribute provides a tooltip when the user hovers over an element.</p>
+        </section>
+
+        <section class="main-section" id="Headings">
+            <header>Headings</header>
+            <p>HTML headings are used to define titles and subtitles in a webpage. There are six levels of headings, from <code>&lt;h1&gt;</code> (most important) to <code>&lt;h6&gt;</code> (least important).</p>
+            <p>Headings help structure content and improve SEO by making it easier for search engines to understand the hierarchy of information.</p>
+            <pre>
+                &lt;h1&gt;Main Heading&lt;/h1&gt;
+                &lt;h2&gt;Subheading&lt;/h2&gt;
+                &lt;h3&gt;Section Heading&lt;/h3&gt;
+            </pre>
+            <p>For accessibility, it's recommended to use heading levels correctly and not skip levels arbitrarily.</p>
+        </section>
+        
+        <section class="main-section" id="Paragraphs">
+            <header>Paragraphs</header>
+            <p>The <code>&lt;p&gt;</code> element defines a paragraph of text.</p>
+            <p>Paragraphs help in separating blocks of text to enhance readability.</p>
+            <pre>
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            </pre>
+            <p>Browsers automatically add space before and after paragraphs to improve text flow.</p>
+        </section>
+        
+        <section class="main-section" id="Text_Formatting">
+            <header>Text Formatting</header>
+            <p>HTML provides various elements to format text:</p>
+            <ul>
+                <li><code>&lt;b&gt;</code> - Bold text</li>
+                <li><code>&lt;i&gt;</code> - Italic text</li>
+                <li><code>&lt;u&gt;</code> - Underlined text</li>
+                <li><code>&lt;strong&gt;</code> - Important text</li>
+                <li><code>&lt;em&gt;</code> - Emphasized text</li>
+            </ul>
+            <pre>
+                &lt;b&gt;Bold Text&lt;/b&gt;
+                &lt;i&gt;Italic Text&lt;/i&gt;
+                &lt;u&gt;Underlined Text&lt;/u&gt;
+                &lt;strong&gt;Strong Text&lt;/strong&gt;
+                &lt;em&gt;Emphasized Text&lt;/em&gt;
+            </pre>
+            <p>The <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> tags are useful for accessibility and screen readers.</p>
+        </section>
+        
+        <section class="main-section" id="Links">
+            <header>Links</header>
+            <p>Links are created using the <code>&lt;a&gt;</code> tag.</p>
+            <pre>
+                &lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+            </pre>
+            <p>The <code>target="_blank"</code> attribute opens the link in a new tab.</p>
+            <p>Links can also be styled using CSS to change color, add hover effects, and more.</p>
+        </section>
+        
+        <section class="main-section" id="Comments">
+            <header>Comments</header>
+            <p>Comments are used to add notes in the code that are not displayed on the webpage.</p>
+            <pre>
+                &lt;!-- This is a comment --&gt;
+            </pre>
+            <p>Comments are useful for explaining code and making it easier to maintain.</p>
+        </section>
+        
+        <section class="main-section" id="Images">
+            <header>Images</header>
+            <p>Images are added using the <code>&lt;img&gt;</code> tag.</p>
+            <pre>
+                &lt;img src="image.jpg" alt="Description of image" width="300"&gt;
+            </pre>
+            <p>The <code>alt</code> attribute provides alternative text for accessibility and SEO.</p>
+            <p>Images can also be styled using CSS for size, alignment, and effects.</p>
+        </section>
+        
+        <section class="main-section" id="Lists">
+            <header>Lists</header>
+            <p>There are two types of lists in HTML:</p>
+            <ul>
+                <li>Ordered List (<code>&lt;ol&gt;</code>) - Numbered items</li>
+                <li>Unordered List (<code>&lt;ul&gt;</code>) - Bulleted items</li>
+            </ul>
+            <pre>
+                &lt;ul&gt;
+                    &lt;li&gt;Item 1&lt;/li&gt;
+                    &lt;li&gt;Item 2&lt;/li&gt;
+                &lt;/ul&gt;
+                
+                &lt;ol&gt;
+                    &lt;li&gt;First&lt;/li&gt;
+                    &lt;li&gt;Second&lt;/li&gt;
+                &lt;/ol&gt;
+            </pre>
+            <p>Lists are helpful for organizing content clearly.</p>
+        </section>
+        
+        <section class="main-section" id="Tables">
+            <header>Tables</header>
+            <p>Tables are created using the <code>&lt;table&gt;</code> tag.</p>
+            <pre>
+                &lt;table border="1"&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Name&lt;/th&gt;
+                        &lt;th&gt;Age&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Alice&lt;/td&gt;
+                        &lt;td&gt;25&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            </pre>
+            <p>Tables are used for displaying structured data.</p>
+        </section>
+
+        <section class="main-section" id="Forms">
+            <header>Forms</header>
+            <p>Forms allow user input via various input elements like text fields, checkboxes, and buttons.</p>
+            <p>Example:</p>
+            <pre>
+                &lt;form&gt;
+                    &lt;label for="name"&gt;Name:&lt;/label&gt;
+                    &lt;input type="text" id="name" name="name" required&gt;
+                    &lt;input type="submit" value="Submit"&gt;
+                &lt;/form&gt;
+            </pre>
+            <p>Common form elements:</p>
+            <ul>
+                <li><code>&lt;input&gt;</code> - Used for various input types (text, email, password).</li>
+                <li><code>&lt;textarea&gt;</code> - Multi-line text input.</li>
+                <li><code>&lt;select&gt;</code> - Dropdown menu.</li>
+                <li><code>&lt;button&gt;</code> - Clickable button.</li>
+            </ul>
+            <p>Forms are used for login, signup, surveys, and more.</p>
+            <p>Each input field requires a <code>name</code> attribute to be identified when submitting data.</p>
+            <p>Form validation is an essential feature that ensures users enter correct data before submission. Attributes like <code>required</code>, <code>minlength</code>, and <code>maxlength</code> help in validation.</p>
+            <p>Modern forms use JavaScript and backend integration to process user data efficiently.</p>
+        </section>
+    </main>
+</body>
+</html>
